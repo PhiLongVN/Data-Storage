@@ -1,0 +1,177 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 3rem;
+
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+  background-color: #0c122c;
+}
+
+.cotainer {
+  margin: auto;
+  padding: 1rem;
+  max-width: 1440px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+/* ========================================================================== */
+/*                                    FYLO                                    */
+/* ========================================================================== */
+.fylo {
+  background: #1e2c69;
+  padding: 2rem;
+  padding-right: 6rem;
+  border-radius: 0 100px 0 0;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ------------------------------- .fylo-icon ------------------------------- */
+.fylo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  //   padding-left: 1rem;
+
+  img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #0b122c;
+    cursor: pointer;
+
+    &:hover{
+        filter: opacity(0.8);
+    }
+  }
+}
+
+/* ========================================================================== */
+/*                                    INFO                                    */
+/* ========================================================================== */
+.info {
+  position: relative;
+
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-width: 700px;
+  padding: 2rem;
+  background: #1e2c69;
+  border-radius: 10px;
+
+  h3 {
+    align-self: flex-start;
+    color: rgba(255, 255, 255, 0.667);
+    font-weight: 100;
+    font-size: 1rem;
+
+    strong {
+      color: rgba(255, 255, 255, 0.844);
+    }
+  }
+}
+
+/* ------------------------------ .info-proress ----------------------------- */
+.info-proress {
+  width: 100%;
+
+  //   proress
+  .proress {
+    border-radius: 100px;
+    display: block;
+    background: #151e46;
+    width: 100%;
+    height: 15px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 80%;
+      background-image: linear-gradient(to right, #fc9d97, #fd5795);
+      border-radius: 100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 75%;
+      //   background-image: linear-gradient(to right, #fc9d97, #fd5795);
+      background: white;
+    }
+  }
+
+  //   .value-proress
+  .value-proress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      color: white;
+      font-weight: 700;
+      padding: 0.5rem;
+      padding-bottom: 0rem;
+    }
+  }
+}
+
+/* ------------------------------- .info-left ------------------------------- */
+.info-left {
+  position: absolute;
+  top: -30%;
+  right: 7%;
+
+  padding: 0.5rem 1rem;
+
+  background: #fffffe;
+  border-radius: 10px;
+  color: #2a2f42e7;
+  font-weight: 400;
+
+  strong {
+    color: #13162e;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 0.3rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 25px solid red;
+    border-color: transparent white transparent transparent;
+    right: 0%;
+    bottom: -25px;
+  }
+}

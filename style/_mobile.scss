@@ -1,0 +1,47 @@
+@media screen and (max-width: 767.98px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+  }
+
+  .cotainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* ========================================================================== */
+  /*                                    INFO                                    */
+  /* ========================================================================== */
+  .info {
+    width: 100%;
+    padding-bottom: 3rem;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  /* ------------------------------- .info-left ------------------------------- */
+  .info-left {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+
+    &::before {
+      border: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .fylo-icon {
+    img {
+        width: 40px;
+        height: 40px;
+      padding: 0.5rem;
+    }
+  }
+}
